@@ -436,7 +436,7 @@ catch {
 	    try 
 	        {
 	        $contactObject.Save()
-			Write-Host "Contact $FirstName  created" -ForegroundColor 'Yellow'	
+			Write-Verbose -Message "Contact $FirstName  created"
 	        
 	        }
 	            
@@ -585,7 +585,7 @@ catch {
 	
 	END {
 			$newTaskObject.Save()
-			Write-Host "Task => $Subject <= created fucessfully." -ForegroundColor Green
+			Write-Verbose -Message "Task '$Subject' created sucessfully."
 		}
 	
 	} # end of the New-OutlookTask Function.
@@ -684,7 +684,7 @@ catch {
 	        $noteItem.Save()
 			
 			#writing a prompt message.
-	        Write-Host "Note: $Title is credted." -ForegroundColor Yellow
+	        Write-Verbose -Message "Note: $Title is credted."
 	    
 	    }
 	 
