@@ -11,4 +11,9 @@ OutlookTools is a PowerShell module for Outlook. With the help of this module yo
 * appointment
 * email
 
+# Changes from original module
+Code cleanup: replaced Write-Host with Write-Verbose, Write-Warning with Write-Error
+Code errors correction
 
+Added new functions:
+* New-OutlookTask
