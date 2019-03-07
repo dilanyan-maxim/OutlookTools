@@ -842,6 +842,8 @@ catch {
 		$StartDate = $tasks.StartDate
 		
 		$tasks | Select-Object Subject,Importance,StartDate,DueDate,Categories
+		
+		Write-Host "something"
 	}
 	PROCESS {
 		
