@@ -460,7 +460,7 @@ function New-OutlookTask {
 		New-OutlookTask -Subject "Going to visit Alice in wonderland"
 
 	.EXAMPLE
-		New-OutlookTask -Subject "Visit Captain Jack Sparrow" -Notes " He lives near Caribbean"
+		New-OutlookTask -Subject "Visit Captain Jack Sparrow" -Notes "He lives near Caribbean"
 
 	.EXAMPLE
 		New-OutlookTask -Subject "Metting with Mr. Harrry Potter" -Importance 2 -StartDate "08/15/2013 19:00 "
@@ -494,31 +494,29 @@ Param (
 [Parameter(
 	Mandatory = $True,
 	HelpMessage="Please enter a subject for the task.")]
-[Alias('subj')]		
+[Alias('Name')]		
 [string]$Subject,
 
 # Note Parameter , to add extra notes	
-[Alias('note')]	
+[Alias('Note','Comment')]	
 [string]$Notes,
 
 # Dute Date Parameter	
-[Alias('ddate')]		
+[Alias('Due')]		
 [DateTime]$DueDate,
 
 # Enable/Disable reminders	
-[Alias('enablerem')]		
+[Alias('Reminder')]		
 [boolean]$EnableReminder = $true,
 
 # Start Date of the parameter	
-[Alias('stdate')]		
+[Alias('Start')]		
 [DateTime]$StartDate,
 
 # Importance of the task	
-[Alias('impor')]		
 [string]$Importance = 1,
 
 # Reminder Time, when should you get reminder.	
-[Alias('remtime')]		
 $ReminderTime
 
 )
