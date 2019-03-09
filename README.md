@@ -17,7 +17,7 @@ Code cleanup: replaced Write-Host with Write-Verbose, Write-Warning with Write-E
 Code errors correction
 
 Added new functions:
-* New-OutlookTask
+* Get-OutlookTask
 
 ## Installation
 
