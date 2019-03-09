@@ -23,7 +23,7 @@ Added new functions:
 
 With PowerShell:
 ```
-$uri = 'https://raw.githubusercontent.com/bgshacklett/OutlookTools/master'
+$uri = 'https://raw.githubusercontent.com/dilanyan-maxim/OutlookTools/master'
 $files = @('OutlookTools.psd1','OutlookTools.psm1')
 $docs = [Environment]::GetFolderPath('MyDocuments')
 $PSmodules = Join-Path -Path "$docs" -ChildPath 'WindowsPowerShell\Modules'
